@@ -4,13 +4,14 @@ module Styles = {
   open Css;
   let card =
     style([
-      border(px(1), solid, hex("898989")),
+      border(px(1), `solid, hex("898989")),
       borderRadius(px(4)),
       padding(rem(1.0)),
+      marginBottom(rem(0.25)),
     ]);
 };
 
-let make = (~name, ~description, ~href, _childre) => {
+let make = (~name, ~description, ~href, _children) => {
   ...component,
   render: _self =>
     <div className=Styles.card>
