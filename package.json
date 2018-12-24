@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "parcel -p 8000 src/index.html",
-    "build": "parcel build src/index.html --public-url https://benjamminj.github.io/reason-react-tutorial/"
+    "build": "parcel build src/index.html --public-url https://0xc0d3r.github.io/reason-react-tutorial/"
   },
   "dependencies": {
     "@glennsl/bs-json": "^3.0.0",

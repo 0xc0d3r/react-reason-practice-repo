@@ -2,12 +2,13 @@ let component = ReasonReact.statelessComponent("Card");
 
 module Styles = {
   open Css;
-  let card = style([
-    border(px(1), `solid, hex("898989")),
-    borderRadius(px(4)),
-    padding(rem(1.0)),
-    marginBottom(rem(0.25))
-  ])
+  let card =
+    style([
+      border(px(1), `solid, hex("898989")),
+      borderRadius(px(4)),
+      padding(rem(1.0)),
+      marginBottom(rem(0.25)),
+    ]);
 };
 
 let make = (~name, ~description, ~href, _children) => {

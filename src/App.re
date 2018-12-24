@@ -65,11 +65,8 @@ module Api = {
 module Styles = {
   open Css;
 
-  let list = style([
-    display(`flex),
-    flexWrap(`wrap),
-  ])
-}
+  let list = style([display(`flex), flexWrap(`wrap)]);
+};
 
 let make = _children => {
   ...component,
@@ -128,7 +125,7 @@ let make = _children => {
             self.state.results
             |> Array.of_list
             |> Array.map(({name, href, description}) =>
-                 <Card key={name} name href description />
+                 <Card key=name name href description />
                )
             |> ReasonReact.array
         }
